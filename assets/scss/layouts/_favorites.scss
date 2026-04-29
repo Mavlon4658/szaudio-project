@@ -1,0 +1,119 @@
+.favorites {
+    padding: 48px 0 96px;
+
+    @include media(992) {
+        padding: 24px 0 48px;
+    }
+
+    .sec-title {
+        margin: 16px 0 32px;
+
+        @include media(992) {
+            margin: 8px 0 16px;
+        }
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+
+        @include media(1350) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include media(800) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    .product-card {
+        opacity: 1;
+        width: 100%;
+
+        @include media(800) {
+            padding: 8px;
+        }
+        
+        .like-btn {
+            display: flex;
+        }
+
+        &__swp {
+            img {
+                @include media(800) {
+                    height: 120px;
+                }
+            }
+
+            .swp-pagination {
+                @include media(992) {
+                    display: none;
+                }
+            }
+        }
+
+        &__body {
+            p {
+                display: none;
+            }
+
+            h3 {
+                margin-bottom: 15px;
+                -webkit-line-clamp: 3;
+                font-weight: 500;
+            }
+
+            h4 {
+                @include media(800) {
+                    margin-bottom: 12px;
+                }
+            }
+
+            .price {
+                @include media(800) {
+                    gap: 4px;
+                }
+
+                del {
+                    @include media(800) {
+                        font-size: 12px;
+                        line-height: 133%;
+                    }
+                }
+
+                b {
+                    @include media(800) {
+                        font-size: 18px;
+                        line-height: 133%;
+                    }
+                }
+
+                &-wrap {
+                    @include media(800) {
+                        margin-bottom: 12px;
+                    }
+
+                    span {
+                        @include media(800) {
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            .btn-black {
+                @include media(800) {
+                    height: 44px;
+                    font-size: 16px;
+
+                    span {
+                        width: 81px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.catalog {
+    &-home {
+        &__title {
+            font-weight: 600;
+            font-size: 30px;
+            line-height: 107%;
+            margin: 16px 0 24px;
+
+            @include media(992) {
+                margin: 12px 0 20px;
+                font-size: 20px;
+                line-height: 140%;
+            }
+        }
+
+        .home-card {
+            &.card-1 {
+                min-height: 234px;
+            }
+        }
+
+        &__card {
+            min-height: 517px;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            @include media(992) {
+                min-height: 230px;
+                gap: 8px;
+            }
+
+            a {
+                @include media(992) {
+                    position: absolute;
+                    left: 12px;
+                    bottom: 16px;
+                    width: 44px;
+                    height: 44px;
+                }
+            }
+
+            .bg-img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+
+                @include media(992) {
+                    display: none;
+                }
+
+                &.sm {
+                    display: none;
+
+                    @include media(992) {
+                        display: block;
+                    }
+                }
+            }
+
+            p {
+                @include media(992) {
+                    display: none;
+                    color: $color-basic-700;
+
+                    span {
+                        color: $color-black-700;
+                    }
+                }
+
+                &.text-sm {
+                    display: none;
+
+                    @include media(992) {
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        &__cards {
+            display: none;
+            order: 3;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+            width: 100%;
+            
+            @include media(992) {
+                display: grid;
+            }
+            
+            li {
+                position: relative;
+                z-index: 1;
+                box-shadow: 0 0 8px 0 rgba(17, 35, 192, 0.05), 0 0 2px 0 #e7e7e7;
+                background: #fff;
+                height: 240px;
+                border-radius: 20px;
+                overflow: hidden;
+                padding: 16px 8px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 8px;
+            }
+
+            h3 {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 150%;
+            }
+
+            .bg-img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: -1;
+            }
+        }
+    }
+}
+
+// All catalog
+.all-catalog {
+    padding: 64px 0 0;
+
+    @include media(992) {
+        padding: 32px 0 40px;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+
+        @include media(992) {
+            gap: 32px;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-bottom: 56px;
+    }
+
+    &__head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 24px;
+
+        @include media(992) {
+            margin-bottom: 16px;
+        }
+    }
+
+    .btn-link {
+        @include media(992) {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 167%;
+        transition: .2s ease-in-out all;
+
+        @include media(992) {
+            font-size: 20px;
+            line-height: 140%;
+        }
+
+        &:hover {
+            color: #0391DD;
+            cursor: pointer;
+        }
+    }
+
+    .product-card {
+        min-width: 0;
+    }
+}
+// All catalog end

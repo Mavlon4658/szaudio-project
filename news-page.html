@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <div class="header-top">
+                    <a href="#" class="header-top__link">
+                        <img src="./assets/images/location.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Шоурумы</a>
+                        </li>
+                        <li>
+                            <a href="#">Справка</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="tel:+8 (800) 500-11-96" class="header-top__link">
+                        <img src="./assets/images/phone.svg" alt="">
+                        <span>8 (800) 500-11-96</span>
+                    </a>
+                </div>
+                <div class="header-sm">
+                    <button class="header-bars">
+                        <img src="./assets/images/bars.svg" alt="">
+                    </button>
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <a href="tel:+8 (800) 500-11-96" class="phone-link">
+                        <img src="./assets/images/call-icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-body">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <div class="header-content">
+                        <button class="btn-black">
+                            <img src="./assets/images/catalog-icon.svg" alt="">
+                            <span>Каталог</span>
+                        </button>
+                        <div class="header-search">
+                            <input type="text" placeholder="Название, артикул...">
+                            <button>
+                                <img src="./assets/images/loop.svg" alt="">
+                            </button>
+                        </div>
+                        <button class="header-search__btn">Найти</button>
+                    </div>
+                    <div class="header-body__right">
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/status-icon.svg" alt="">
+                            <span>Статус</span>
+                        </a>
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/favorite-icon.svg" alt="">
+                            <span>Избранное</span>
+                        </a>
+                        <div class="header-basket">
+                            <button class="header-body__right-link">
+                                <img src="./assets/images/basket.svg" alt="">
+                                <span>Корзина</span>
+                            </button>
+                            <div class="header-basket__content">
+                                <img src="./assets/images/corner.svg" alt="" class="icon">
+                                <h3>Корзина все еще пуста </h3>
+                                <p>Чтобы выбрать подходящий товар, воспользуйтесь каталогом</p>
+                                <a href="#" class="btn-black">Открыть каталог</a>
+                            </div>
+                        </div>
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/login-icon.svg" alt="">
+                            <span>Вход </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul>
+                        <li>
+                            <a href="#">DJ-оборудование</a>
+                        </li>
+                        <li>
+                            <a href="#">Микрофоны</a>
+                        </li>
+                        <li>
+                            <a href="#">Клавиши</a>
+                        </li>
+                        <li>
+                            <a href="#">Звук</a>
+                        </li>
+                        <li>
+                            <a href="#">Свет</a>
+                        </li>
+                        <li>
+                            <a href="#">Коммутация</a>
+                        </li>
+                        <li>
+                            <a href="#">Кейсы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Navs -->
+        <ul class="navs">
+            <li>
+                <a href="/" class="active">
+                    <img src="./assets/images/nav-icon-1.svg" alt="">
+                    <img src="./assets/images/nav-icon-1-active.svg" alt="">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-2.svg" alt="">
+                    <img src="./assets/images/nav-icon-2-active.svg" alt="">
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-3.svg" alt="">
+                    <img src="./assets/images/nav-icon-3-active.svg" alt="">
+                    <span>Каталог</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-4.svg" alt="">
+                    <img src="./assets/images/nav-icon-4-active.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-5.svg" alt="">
+                    <img src="./assets/images/nav-icon-5-active.svg" alt="">
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Navs end -->
+    
+        <main>
+
+            <!-- News -->
+            <section class="news news-home">
+                <div class="container news-container">
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb">
+                        <div class="breadcrumb-content">
+                            <a href="#">Text</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <a href="#">Text</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <span>Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                        </div>
+                        <a href="/" class="back-btn">
+                            <img src="./assets/images/back-btn.svg" alt="">
+                            <span>На главную</span>
+                        </a>
+                    </div>
+                    <!-- Breadcrumb end -->
+                    <div class="news-home__content">
+                        <div class="news-home__content-head">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <img src="./assets/images/news-home-card-md.png" alt="" class="main-img sm">
+                            <div class="text">
+                                <div class="text-alert">Релиз</div>
+                                <div class="text-title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</div>
+                                <div class="text-description">
+                                    <div class="text-description__item">
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span class="lg-text">Опубликовано в 20:46, 29 марта 2021 г</span>
+                                        <span class="md-text">Опубликовано: 29 марта 2021 г.</span>
+                                    </div>
+                                    <div class="text-description__item">
+                                        <img src="./assets/images/eye-gray.svg" alt="">
+                                        <span>456</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul>
+                            <li>Поиск и формирование своего фирменного гитарного звука не обходится без эффектов, за которые отвечают педалборды и процессоры.</li>
+                            <li>Многие гитаристы предпочитают громоздким аналоговым педалям цифровые решения.</li>
+                            <li>На это есть ряд причин: гитарный процессор объединяет необходимые эффекты в одном устройстве, а головной боли с кабелями и питанием элементов цепи при этом не будет.</li>
+                            <li>В процессорах можно встретить встроенную педаль экспрессии, разъемы для футсвитчей, USB-подключение, аудиоинтерфейс и MIDI-интерфейс. Запитываются процессоры</li>
+                            <li>от адаптера, а в некоторых моделях предусмотрена возможность питания от батареек AA либо «крона».</li>
+                        </ul>
+                    </div>
+                    <h2 class="sec-title">Другие новости</h2>
+                    <div class="news-list">
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                            </span>
+                        </a>
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                            </span>
+                        </a>
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                            </span>
+                        </a>
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                            </span>
+                        </a>
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Подписчикам Reason+ открыли доступ к Reason Studios в HD</span>
+                            </span>
+                        </a>
+                        <a href="#" class="news-card">
+                            <img src="./assets/images/news-card-1.png" alt="" class="main-img">
+                            <span class="news-card__text">
+                                <span class="news-card__head">
+                                    <span>
+                                        <img src="./assets/images/clock-gray.svg" alt="">
+                                        <span>12:34</span>
+                                    </span>
+                                    <span>12 февраля 2020 года</span>
+                                </span>
+                                <span class="news-card__title">Две новых модели наушников от KRK Две новых модели наушников Две новых модели... </span>
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <!-- News end -->
+
+            <!-- Anons -->
+            <section class="anons">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">Удобный личный кабинет</div>
+                        <div class="swiper-slide dot"></div>
+                        <div class="swiper-slide">Гибкие скидки партнерам</div>
+                        <div class="swiper-slide dot"></div>
+                        <div class="swiper-slide">Доставка по РФ</div>
+                        <div class="swiper-slide dot"></div>
+                        <div class="swiper-slide">Свое производство</div>
+                        <div class="swiper-slide dot"></div>
+                        <div class="swiper-slide">Гарантия от производителя</div>
+                    </div>
+                </div>
+            </section>
+            <!-- Anons end -->
+
+            <!-- Products -->
+            <section class="products">
+                <div class="container products-container">
+                    <div class="products-head">
+                        <div class="products-head__links">
+                            <a href="#" class="active">Новинки</a>
+                            <a href="#">Популярное</a>
+                        </div>
+                        <a href="#" class="btn-link">
+                            <span>Все товары</span>
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.75002 15.1875C6.63877 15.1875 6.53001 15.1545 6.4375 15.0927C6.345 15.0309 6.2729 14.9431 6.23032 14.8403C6.18774 14.7375 6.1766 14.6244 6.19831 14.5153C6.22002 14.4062 6.27359 14.3059 6.35226 14.2273L11.5795 9.00001L6.35226 3.77277C6.24677 3.66728 6.18751 3.5242 6.18751 3.37501C6.18751 3.22583 6.24677 3.08275 6.35226 2.97726C6.45776 2.87176 6.60083 2.8125 6.75002 2.8125C6.89921 2.8125 7.04229 2.87176 7.14778 2.97726L12.7728 8.60226C12.825 8.65449 12.8665 8.7165 12.8947 8.78475C12.923 8.853 12.9375 8.92614 12.9375 9.00001C12.9375 9.07389 12.923 9.14703 12.8947 9.21528C12.8665 9.28353 12.825 9.34554 12.7728 9.39777L7.14778 15.0228C7.0956 15.0751 7.0336 15.1166 6.96534 15.1448C6.89708 15.1731 6.8239 15.1876 6.75002 15.1875V15.1875Z" fill="#2B2D3A" />
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="swiper products-list">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="swiper-slide product-card">
+                                <div class="product-card__head">
+                                    <div class="like-btn">
+                                        <input type="checkbox" name="" id="">
+                                        <img src="./assets/images/card-heart.svg" alt="">
+                                        <img src="./assets/images/card-heart-active.svg" alt="" class="active">
+                                    </div>
+                                    <div class="swiper product-card__swp">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img src="./assets/images/product-card-1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swp-pagination"></div>
+                                    </div>
+                                </div>
+                                <div class="product-card__body">
+                                    <p>Радиосистемы с петличным микрофоном</p>
+                                    <h3>Native Instruments Traktor Scratch Pro Control Vinyl Red</h3>
+                                    <h4>
+                                        <img src="./assets/images/alert-yellow.svg" alt="">
+                                        <span>В наличии</span>
+                                    </h4>
+                                    <div class="price-wrap">
+                                        <div class="price">
+                                            <del>4 888 999 ₽</del>
+                                            <b>3 147 990 ₽</b>
+                                        </div>
+                                        <span>Арт. 40098</span>
+                                    </div>
+                                    <a href="#" class="btn-black">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M9 20.25C9 20.5467 8.91203 20.8367 8.7472 21.0834C8.58238 21.33 8.34811 21.5223 8.07403 21.6358C7.79994 21.7494 7.49834 21.7791 7.20736 21.7212C6.91639 21.6633 6.64912 21.5204 6.43934 21.3107C6.22956 21.1009 6.0867 20.8336 6.02882 20.5426C5.97094 20.2517 6.00065 19.9501 6.11418 19.676C6.22771 19.4019 6.41997 19.1676 6.66665 19.0028C6.91332 18.838 7.20333 18.75 7.5 18.75C7.89782 18.75 8.27936 18.908 8.56066 19.1893C8.84196 19.4706 9 19.8522 9 20.25ZM17.25 18.75C16.9533 18.75 16.6633 18.838 16.4166 19.0028C16.17 19.1676 15.9777 19.4019 15.8642 19.676C15.7506 19.9501 15.7209 20.2517 15.7788 20.5426C15.8367 20.8336 15.9796 21.1009 16.1893 21.3107C16.3991 21.5204 16.6664 21.6633 16.9574 21.7212C17.2483 21.7791 17.5499 21.7494 17.824 21.6358C18.0981 21.5223 18.3324 21.33 18.4972 21.0834C18.662 20.8367 18.75 20.5467 18.75 20.25C18.75 19.8522 18.592 19.4706 18.3107 19.1893C18.0294 18.908 17.6478 18.75 17.25 18.75ZM21.5068 6.95606L19.032 15.6181C18.8963 16.0874 18.6121 16.5001 18.2221 16.7944C17.8321 17.0886 17.3572 17.2484 16.8686 17.25H7.88138C7.39281 17.2485 6.91792 17.0886 6.52788 16.7944C6.13784 16.5002 5.85368 16.0874 5.718 15.6181L3.24722 6.97022C3.24441 6.96108 3.24179 6.95189 3.23934 6.94266L2.32716 3.75H0.75C0.551088 3.75 0.360322 3.67098 0.21967 3.53033C0.0790176 3.38968 0 3.19891 0 3C0 2.80109 0.0790176 2.61032 0.21967 2.46967C0.360322 2.32902 0.551088 2.25 0.75 2.25H2.32706C2.65277 2.25105 2.96935 2.35763 3.22939 2.55376C3.48942 2.74989 3.67889 3.025 3.76941 3.33788L4.53 6H20.7857C20.9018 6 21.0163 6.02695 21.1202 6.07873C21.2241 6.1305 21.3145 6.20569 21.3844 6.29837C21.4544 6.39105 21.5018 6.49869 21.523 6.61282C21.5443 6.72694 21.5387 6.84444 21.5068 6.95606ZM19.7914 7.5H4.95862L7.16034 15.2061C7.20557 15.3625 7.30027 15.5001 7.43027 15.5981C7.56026 15.6962 7.71854 15.7495 7.88138 15.75H16.8686C17.0315 15.7495 17.1897 15.6962 17.3197 15.5981C17.4497 15.5001 17.5444 15.3625 17.5897 15.2061L19.7914 7.5Z" fill="white" />
+                                        </svg>
+                                        <span>Добавить в корзину</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="swp-btn swp-btn__prev">
+                            <img src="./assets/images/swp-prev.svg" alt="">
+                        </button>
+                        <button class="swp-btn swp-btn__next">
+                            <img src="./assets/images/swp-next.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <!-- Products end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="container footer-top__container">
+                    <div class="form-group">
+                        <label for="">Ваш E-mail</label>
+                        <input type="text" placeholder="Example@mail.ru" class="form-inp">
+                    </div>
+                    <button>Подписаться на рассылку</button>
+                </div>
+            </div>
+            <div class="container footer-container">
+                <div class="footer-head">
+                    <a href="/" class="footer-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <div class="content">
+                        <div class="content-item">
+                            <p>Бесплатный звонок</p>
+                            <a href="tel:+8 (800) 500-11-96">8 (800) 500-11-96</a>
+                        </div>
+                        <div class="content-item">
+                            <p>Санкт-Петербург</p>
+                            <a href="tel:+8 (812) 334-11-41">8 (812) 334-11-41</a>
+                        </div>
+                        <div class="content-item">
+                            <p>Москва</p>
+                            <a href="tel:+8 (495) 374-80-69">8 (495) 374-80-69</a>
+                        </div>
+                    </div>
+                    <div class="footer-networks">
+                        <a href="#">
+                            <img src="./assets/images/footer-vk.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/footer-telegram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="./assets/images/footer-email.svg" alt="">
+                        </a>
+                        <a href="#" class="btn-black">
+                            <span>Консультация</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.75 17.5002C7.54672 17.5002 2.5 12.4535 2.5 6.25021C2.50107 5.18594 2.88956 4.15846 3.59289 3.35972C4.29623 2.56098 5.26629 2.04561 6.32187 1.9099C6.59048 1.87749 6.86237 1.93291 7.09686 2.06786C7.33136 2.20281 7.51588 2.41004 7.62281 2.65857L9.1925 6.32092C9.27392 6.51036 9.30712 6.71704 9.28912 6.92245C9.27113 7.12787 9.2025 7.32562 9.08938 7.49802L7.78977 9.48381L7.78961 9.48396C8.37646 10.6771 9.34425 11.6407 10.54 12.2222L12.4965 10.918C12.6694 10.8024 12.8684 10.7318 13.0756 10.7128C13.2827 10.6937 13.4913 10.7269 13.6823 10.8091L17.3416 12.3773C17.5901 12.4842 17.7974 12.6687 17.9324 12.9032C18.0673 13.1377 18.1227 13.4096 18.0903 13.6783C17.9546 14.7339 17.4393 15.7039 16.6405 16.4073C15.8418 17.1106 14.8143 17.4991 13.75 17.5002ZM6.47391 3.15107C5.72097 3.2488 5.02933 3.61719 4.5281 4.18748C4.02686 4.75776 3.75029 5.49096 3.75 6.25021C3.753 8.90146 4.80753 11.4433 6.68224 13.318C8.55696 15.1927 11.0988 16.2472 13.75 16.2502C14.51 16.2496 15.2438 15.9723 15.8144 15.4702C16.3849 14.9681 16.7531 14.2754 16.8502 13.5216L13.19 11.9581L11.2341 13.2623C11.0544 13.3824 10.8465 13.4537 10.6309 13.4694C10.4152 13.485 10.1993 13.4443 10.0041 13.3514C8.55032 12.6469 7.3742 11.4762 6.66313 10.0257C6.56974 9.83164 6.52809 9.61676 6.54222 9.40188C6.55634 9.187 6.62576 8.97942 6.74375 8.79927L8.04344 6.81334L6.47391 3.15107Z" fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-navs">
+                        <div class="footer-navs__item">
+                            <h3>Каталог товаров</h3>
+                            <div class="footer-navs__item-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">Все категории</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">DJ-оборудование</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Микрофоны</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Звук</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Свет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Коммутация</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Кейсы</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-navs__item">
+                            <h3>Компания</h3>
+                            <div class="footer-navs__item-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">О компании</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Новости</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Вакансии</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Контакты</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Политика конфиденциальности</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Оферта</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-navs__item">
+                            <h3>Партнерам</h3>
+                            <div class="footer-navs__item-content">
+                                <ul>
+                                    <li>
+                                        <a href="#">Частые вопросы</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Оптовые поставки</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Участие в торгах</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Как стать дилером</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom__text">
+                        <img src="./assets/images/footer-bottom-icon.svg" alt="">
+                        <div>
+                            <p>Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</p>
+                            <p>© 2008-2021 Группа компаний DJSTORE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

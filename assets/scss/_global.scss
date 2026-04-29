@@ -1,0 +1,51 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-montserrat: "Montserrat", sans-serif;
+$font-roboto: "Roboto", sans-serif;
+$font-poppins: "Poppins", sans-serif;
+$font-bebas: "Bebas Neue", sans-serif;
+// Fonts end
+
+// Colors
+
+$color-alpha-100: rgba(43, 45, 58, 0.1);
+$color-alpha-200: rgba(43, 45, 58, 0.2);
+$color-alpha-300: rgba(43, 45, 58, 0.3);
+$color-alpha-400: rgba(43, 45, 58, 0.4);
+$color-alpha-500: rgba(43, 45, 58, 0.5);
+$color-alpha-600: rgba(43, 45, 58, 0.6);
+$color-alpha-700: rgba(43, 45, 58, 0.7);
+$color-alpha-800: rgba(43, 45, 58, 0.8);
+$color-alpha-900: rgba(43, 45, 58, 0.9);
+$color-basic-500: #EDEDED;
+$color-basic-600: #d2d2d2;
+$color-basic-700: #b7b7b7;
+$color-basic-800: #939393;
+$color-black-500: #8B91B4;
+$color-black-600: #6c718f;
+$color-black-700: #2b2d3a;
+$color-gray-700: #EBEEF5;
+$color-gray-800: #DEE4F2;
+// Colors end
+
+@mixin media($value) {
+    @if ($value < 0) {
+        @media screen and (min-width: calc($value * (-1)) + 'px') {
+            @content;
+        }
+
+    } @else {
+        @media screen and (max-width: $value + 'px') {
+            @content;
+        }
+    }
+}
+
+@mixin secPaddingY () {
+    padding-top: 96px;
+
+    @include media(992) {
+        padding-top: 32px;
+    }
+}
