@@ -1,0 +1,605 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="other-header">
+            <div class="other-header__top">
+                <div class="container">
+                    <a href="#">
+                        <img src="./assets/images/location-white.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </a>
+                    <a href="tel:+8 (800) 500-11-96">
+                        <img src="./assets/images/phone-white.svg" alt="">
+                        <span>8 (800) 500-11-96</span>
+                    </a>
+                </div>
+            </div>
+            <div class="other-header__content">
+                <div class="container">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <div class="avatar-block">
+                        <img src="./assets/images/avatar.png" alt="">
+                        <span>Профиль</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Navs -->
+        <ul class="navs product-navs">
+            <li>
+                <a href="/" class="active">
+                    <img src="./assets/images/nav-icon-1.svg" alt="">
+                    <img src="./assets/images/nav-icon-1-active.svg" alt="">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-2.svg" alt="">
+                    <img src="./assets/images/nav-icon-2-active.svg" alt="">
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-3.svg" alt="">
+                    <img src="./assets/images/nav-icon-3-active.svg" alt="">
+                    <span>Каталог</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-4.svg" alt="">
+                    <img src="./assets/images/nav-icon-4-active.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-5.svg" alt="">
+                    <img src="./assets/images/nav-icon-5-active.svg" alt="">
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Navs end -->
+    
+        <main>
+
+            <!-- Checkout modal -->
+            <section class="modal checkout-modal">
+                <div class="modal-bg"></div>
+                <div class="modal-dialog">
+                    <div class="container">
+                        <div class="modal-content">
+                            <div class="modal-content__head">
+                                <h2>Выбор адреса на карте</h2>
+                                <button class="modal-close">
+                                    <img src="./assets/images/times-gray.svg" alt="">
+                                </button>
+                            </div>
+                            <p>Для выбора адреса кликните по изображению дома на карте</p>
+                            <div class="form-search">
+                                <input type="text" placeholder="Начните вводить адрес">
+                                <button>
+                                    <img src="./assets/images/loop.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="map-block">
+                                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe0463c6c09682148d1b1b9a8068139c71b8f85061d71933ab082b8b07be4d07&amp;source=constructor" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Checkout modal end -->
+
+            <!-- Checkout -->
+            <section class="checkout">
+                <div class="container checkout-container">
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb">
+                        <div class="breadcrumb-content">
+                            <a href="/">Главная</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <a href="./basket.html">Корзина</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <span>Оформление заказа</span>
+                        </div>
+                        <a href="/" class="back-btn">
+                            <img src="./assets/images/back-btn.svg" alt="">
+                            <span>На главную</span>
+                        </a>
+                    </div>
+                    <!-- Breadcrumb end -->
+                    <h2>Корзина</h2>
+                    <a href="./basket.html" class="prev-link">
+                        <img src="./assets/images/arrow-left.svg" alt="">
+                        <span>Назад в корзину</span>
+                    </a>
+                    <div class="checkout-content">
+                        <div class="checkout-block">
+                            <div class="checkout-block__item">
+                                <div class="checkout-block__left">
+                                    <div class="number">1</div>
+                                </div>
+                                <div class="checkout-card checkout-detail">
+                                    <div class="checkout-card__head">
+                                        <h3>Контактные данные</h3>
+                                        <div class="icon">
+                                            <img src="./assets/images/check-green.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-group">
+                                        <div class="form-control">
+                                            <label for="">Имя</label>
+                                            <input type="text" class="form-inp" value="Иван">
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="">Фамилия</label>
+                                            <input type="text" class="form-inp" value="Иванов">
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="">E-mail</label>
+                                            <input type="text" class="form-inp" value="IvanIvanov@company.ru">
+                                        </div>
+                                        <div class="form-control">
+                                            <label for="">Телефон</label>
+                                            <input type="tel" class="form-inp" value="+791119880090">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-block__item">
+                                <div class="checkout-block__left">
+                                    <div class="number">2</div>
+                                </div>
+                                <div class="checkout-card checkout-delivery">
+                                    <div class="checkout-card__head">
+                                        <h3>Способ доставки</h3>
+                                        <div class="icon">
+                                            <img src="./assets/images/check-green.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="tab-head">
+                                        <button>
+                                            <img src="./assets/images/tab-head-icon-1.svg" alt="">
+                                            <span>В магазин</span>
+                                        </button>
+                                        <button class="active">
+                                            <img src="./assets/images/tab-head-icon-2.svg" alt="">
+                                            <span>Курьерская доставка</span>
+                                        </button>
+                                        <button>
+                                            <img src="./assets/images/tab-head-icon-3.svg" alt="">
+                                            <span>В пункт выдачи</span>
+                                        </button>
+                                    </div>
+                                    <div class="tab-body">
+                                        <div class="option-list">
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option0" checked>
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-1.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Послезавтра, 18 мая</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>200 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option0">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-2.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Через 2-3 часа</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>600 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option0">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-3.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Послезавтра, 18 мая</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>200 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="option-address">
+                                            <div class="option-address__item">
+                                                <div class="form-control">
+                                                    <label for="">Адрес</label>
+                                                    <input type="text" value="Ул. Садовая, д. 148, строение 3" class="form-inp">
+                                                </div>
+                                                <button class="map-btn checkout-modal__open">
+                                                    <img src="./assets/images/map-icon.svg" alt="">
+                                                    <span>На карте</span>
+                                                </button>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-control">
+                                                    <label for="">Квартира</label>
+                                                    <input type="number" value="43" class="form-inp">
+                                                </div>
+                                                <div class="form-control">
+                                                    <label for="">Подъезд</label>
+                                                    <input type="number" value="1" class="form-inp">
+                                                </div>
+                                                <div class="form-control">
+                                                    <label for="">Этаж</label>
+                                                    <input type="number" value="6" class="form-inp">
+                                                </div>
+                                                <div class="form-checkbox">
+                                                    <div class="form-checkbox__icon">
+                                                        <input type="checkbox" name="" id="">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </div>
+                                                    <div class="form-checkbox__text">Частный дом</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-body active">
+                                        <div class="option-list">
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option1">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-1.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Послезавтра, 18 мая</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>200 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option1" checked>
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-2.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Через 2-3 часа</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>600 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option1">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-3.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Послезавтра, 18 мая</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>200 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="option-address">
+                                            <div class="option-address__item">
+                                                <div class="form-control">
+                                                    <label for="">Адрес</label>
+                                                    <input type="text" value="Ул. Садовая, д. 148, строение 3" class="form-inp">
+                                                </div>
+                                                <button class="map-btn checkout-modal__open">
+                                                    <img src="./assets/images/map-icon.svg" alt="">
+                                                    <span>На карте</span>
+                                                </button>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="form-control">
+                                                    <label for="">Квартира</label>
+                                                    <input type="number" value="43" class="form-inp">
+                                                </div>
+                                                <div class="form-control">
+                                                    <label for="">Подъезд</label>
+                                                    <input type="number" value="1" class="form-inp">
+                                                </div>
+                                                <div class="form-control">
+                                                    <label for="">Этаж</label>
+                                                    <input type="number" value="6" class="form-inp">
+                                                </div>
+                                                <div class="form-checkbox">
+                                                    <div class="form-checkbox__icon">
+                                                        <input type="checkbox" name="" id="">
+                                                        <img src="./assets/images/check-icon.svg" alt="">
+                                                    </div>
+                                                    <div class="form-checkbox__text">Частный дом</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-body">
+                                        <div class="option-list">
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" name="option2">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-3.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Послезавтра, 18 мая</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>200 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="option-card">
+                                                <div class="option-card__head">
+                                                    <input type="radio" checked name="option2">
+                                                    <div class="icon"></div>
+                                                    <img src="./assets/images/option-card-4.svg" alt="">
+                                                </div>
+                                                <ul class="option-card__body">
+                                                    <li>
+                                                        <span>Срок</span>
+                                                        <b>Через 2-3 часа</b>
+                                                    </li>
+                                                    <li>
+                                                        <span>Цена</span>
+                                                        <b>600 ₽</b>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="map-content">
+                                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Abe0463c6c09682148d1b1b9a8068139c71b8f85061d71933ab082b8b07be4d07&amp;source=constructor" frameborder="0"></iframe>
+                                            <a href="#" class="btn-black">
+                                                <img src="./assets/images/tab-head-icon-2.svg" alt="">
+                                                <span>Выбрать пункт выдачи</span>
+                                            </a>
+                                        </div>
+                                        <div class="pickup-point">
+                                            <div class="pickup-point__title">Пункт выдачи:</div>
+                                            <div class="line"></div>
+                                            <div class="pickup-point__data">
+                                                <div class="description">199155, г. Санкт-Петербург, Ул. Малая садовая, д. 148, строение 3,  кв. 43, подъезд 1, этаж 6</div>
+                                                <label for="">Режим работы:</label>
+                                                <p>Пн-Вс, 10:00 - 12:00</p>
+                                            </div>
+                                            <div class="line"></div>
+                                            <ul>
+                                                <li>
+                                                    <span>Срок</span>
+                                                    <b>от 3 рабочих дней</b>
+                                                </li>
+                                                <li>
+                                                    <span>Стоимость доставки</span>
+                                                    <b>690 ₽</b>
+                                                </li>
+                                            </ul>
+                                            <a href="#" class="btn-outline">
+                                                <img src="./assets/images/tab-head-icon-2.svg" alt="">
+                                                <span>Изменить пункт выдачи</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="checkout-block__item">
+                                <div class="checkout-block__left">
+                                    <div class="number">3</div>
+                                </div>
+                                <div class="checkout-card checkout-method">
+                                    <div class="checkout-card__head">
+                                        <h3>Способ оплаты</h3>
+                                        <div class="icon">
+                                            <img src="./assets/images/check-green.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="radio-list">
+                                        <div class="radio">
+                                            <input type="radio" name="paymentMethod1" id="">
+                                            <div class="radio-icon"></div>
+                                            <span>Банковской картой</span>
+                                        </div>
+                                        <div class="radio">
+                                            <input type="radio" name="paymentMethod1" checked id="">
+                                            <div class="radio-icon"></div>
+                                            <span>Счет для Юридических лиц</span>
+                                        </div>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="select-bank">
+                                        <h4></h4>
+                                        <ul class="select-bank__list">
+                                            <li class="select-bank__card">
+                                                <input type="radio" name="bank1" checked id="">
+                                                <div class="select-bank__card-icon"></div>
+                                                <div class="select-bank__card-content">
+                                                    <img src="./assets/images/tinkoff.svg" alt="">
+                                                    <span>Тинькофф</span>
+                                                </div>
+                                            </li>
+                                            <li class="select-bank__card">
+                                                <input type="radio" name="bank1" id="">
+                                                <div class="select-bank__card-icon"></div>
+                                                <div class="select-bank__card-content">
+                                                    <img src="./assets/images/pochtabank.svg" alt="">
+                                                    <span>ПочтаБанк</span>
+                                                </div>
+                                            </li>
+                                            <li class="select-bank__card">
+                                                <input type="radio" name="bank1" id="">
+                                                <div class="select-bank__card-icon"></div>
+                                                <div class="select-bank__card-content">
+                                                    <img src="./assets/images/sber.svg" alt="">
+                                                    <span>Сбер</span>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="line"></div>
+                                    <div class="form-textarea">
+                                        <label for="">Комментарий к заказу</label>
+                                        <textarea placeholder="Введите текст"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-content__right">
+                            <div class="basket-form">
+                                <h3>Ваша корзина</h3>
+                                <ul>
+                                    <li>
+                                        <span>Вес</span>
+                                        <b>3.65 кг</b>
+                                    </li>
+                                    <li>
+                                        <span>Товары (4)</span>
+                                        <b>328 986 ₽</b>
+                                    </li>
+                                    <li>
+                                        <span>Скидка</span>
+                                        <b class="text-green">-8 990 ₽</b>
+                                    </li>
+                                </ul>
+                                <div class="basket-form__price">
+                                    <span>320 986 ₽</span>
+                                    <b>320 986 ₽</b>
+                                </div>
+                                <div class="basket-form__promo">
+                                    <label for="">Введите промокод</label>
+                                    <div class="basket-form__promo-inp">
+                                        <input type="number">
+                                        <button>Применить</button>
+                                    </div>
+                                </div>
+                                <div class="basket-form__discount">
+                                    <p>Ваша персональная скидка </p>
+                                    <b>15%</b>
+                                </div>
+                                <button class="btn-green">Перйти к оформлению</button>
+                                <div class="form-checkbox">
+                                    <div class="form-checkbox__icon">
+                                        <input type="checkbox" checked name="" id="">
+                                        <img src="./assets/images/check-icon.svg" alt="">
+                                    </div>
+                                    <div class="form-checkbox__text">
+                                        Я даю согласие на обработку персональных данных в соответсвии с <a href="#">Политикий конфиденциальности</a>
+                                    </div>
+                                </div>
+                                <div class="form-checkbox">
+                                    <div class="form-checkbox__icon">
+                                        <input type="checkbox" checked name="" id="">
+                                        <img src="./assets/images/check-icon.svg" alt="">
+                                    </div>
+                                    <div class="form-checkbox__text">
+                                        Я согласен(а) получать информационные email рассылки на почту
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-discount">
+                                <h3>Персональная скидка</h3>
+                                <div class="basket-discount__content">
+                                    <p>Применить персональную скидку N%</p>
+                                    <div class="form-switch">
+                                        <input type="checkbox" name="" id="">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Checkout end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="other-footer">
+            <div class="container other-footer__container">
+                <a href="/" class="footer-logo">
+                    <img src="./assets/images/logo-light.png" width="156" alt="">
+                </a>
+                <div class="other-footer__text">
+                    <img src="./assets/images/other-footer-text-icon.svg" alt="">
+                    <ul>
+                        <li>Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</li>
+                        <li>© 2008-2021 Группа компаний DJSTORE</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

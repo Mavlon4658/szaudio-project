@@ -11,7 +11,7 @@ const phoneInp = document.querySelectorAll('input[type="tel"]');
 if (phoneInp.length) {
     phoneInp.forEach(el => {
         IMask(el, {
-            mask: '+{7}(000) 000-00-00',
+            mask: '+{7}00000000000',
         })
     });
 }
@@ -180,4 +180,163 @@ if (filter) {
             filter.classList.remove('end-active')
         }, 400);
     }
+}
+
+const productChildSwp = new Swiper('.product-home__card-swp .swp-child .swiper', {
+    slidesPerView: 4,
+    spaceBetween: 12,
+    direction: "vertical",
+});
+
+const productParentSwp = new Swiper('.product-home__card-swp .swp-parent', {
+    slidesPerView: 1,
+    loop: true,
+    pagination: {
+        el: '.product-home__card-swp .swp-parent .swp-pagination',
+        clickable: true,
+    },
+    thumbs: {
+        swiper: productChildSwp,
+    },
+})
+
+const productHomeCharacterHeadBtn = document.querySelectorAll('.product-home__character-head li');
+const productHomeCharacterBody = document.querySelectorAll('.product-home__character-body');
+
+if (productHomeCharacterHeadBtn.length) {
+    productHomeCharacterHeadBtn.forEach((btn, btnIdx) => {
+        btn.onclick = () => {
+            productHomeCharacterHeadBtn.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            productHomeCharacterBody.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const colorForm = document.querySelector('.color-form');
+const colorFormBtn = document.querySelector('.color-form__btn');
+const colorFormList = document.querySelectorAll('.color-form__list li');
+
+if (colorForm) {
+    colorFormBtn.onclick = () => {
+        colorForm.classList.toggle('active')
+    }
+    colorFormList.forEach(btn => {
+        btn.onclick = () => {
+            colorFormBtn.querySelector('.color-form__btn-text span').textContent = btn.querySelector('span').textContent;
+            colorFormBtn.querySelector('.color-form__btn-text img').setAttribute('src', btn.querySelector('img').getAttribute('src'));
+            colorForm.classList.remove('active');
+            colorFormList.forEach(el => {
+                if (el == btn) {
+                    el.classList.add('selected');
+                } else {
+                    el.classList.remove('selected');
+                }
+            })
+        }
+    });
+    window.addEventListener('click', function (event) {
+        if (!colorForm.contains(event.target)) {
+            colorForm.classList.remove('active');
+        }
+    })
+}
+
+const referenceAccordion = document.querySelectorAll('.reference-accordion');
+
+if (referenceAccordion.length) {
+    referenceAccordion.forEach(acc => {
+        const idText = acc.getAttribute('accordion-id');
+        const btn = acc.querySelector('#' + idText + '__btn');
+        const content = acc.querySelector('#' + idText + '__body');
+
+        btn.addEventListener('click', function () {
+            btn.classList.toggle('active');
+            content.classList.toggle('active');
+        })
+    })
+}
+
+const calculations = document.querySelectorAll('.calculation');
+
+if (calculations.length) {
+    calculations.forEach(el => {
+        const btns = el.querySelectorAll('.calculation-btn');
+        const inp = el.querySelector('.calculation-inp');
+
+        btns[0].onclick = () => {
+            if (+inp.value !== 1) {
+                inp.value = +inp.value - 1;
+            }
+        }
+
+        btns[1].onclick = () => {
+            inp.value = +inp.value + 1;
+        }
+    })
+}
+
+const checkoutTabBtn = document.querySelectorAll('.checkout .tab-head button');
+const checkoutTabBody = document.querySelectorAll('.checkout .tab-body');
+
+if (checkoutTabBtn.length) {
+    checkoutTabBtn.forEach((btn, btnIdx) => {
+        btn.onclick = () => {
+            checkoutTabBtn.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+            checkoutTabBody.forEach((el, elIdx) => {
+                if (elIdx == btnIdx) {
+                    el.classList.add('active');
+                } else {
+                    el.classList.remove('active');
+                }
+            })
+        }
+    })
+}
+
+const modalClasses = ['.checkout-modal', '.infromation-modal', '.method-modal', '.payment-modal', '.entity-modal', '.status-modal'];
+if (modalClasses.length) {
+    modalClasses.forEach(cls => {
+        const m = document.querySelector(cls);
+        const mBg = document.querySelector(cls + ' .modal-bg');
+        const mCloseBtn = document.querySelector(cls + ' .modal-close');
+        const mOpenBtns = document.querySelectorAll(cls + '__open');
+
+        if (m) {
+            mOpenBtns.forEach(btn => {
+                btn.onclick = e => {
+                    bodyHidden();
+                    e.preventDefault();
+                    m.classList.add('active');
+                }
+            })
+    
+            mBg.onclick = () => {
+                bodyVisible();
+                m.classList.remove('active');
+            }
+    
+            mCloseBtn.onclick = () => {
+                bodyVisible();
+                m.classList.remove('active');
+            }
+        }
+    });
 }

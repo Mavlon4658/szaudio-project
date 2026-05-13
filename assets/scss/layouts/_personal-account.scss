@@ -1,0 +1,155 @@
+.personal-account {
+    &__head {
+        background: #fff;
+        border-radius: 0 0 40px 40px;
+
+        .container {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-img {
+            flex-shrink: 0;
+            width: 338px;
+            height: 338px;
+            object-fit: contain;
+        }
+
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+            &-head {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                p {
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 129%;
+                    color: $color-alpha-900;
+                    padding: 10px 15px;
+                    border: 1px solid $color-basic-700;
+                    border-radius: 50px;
+                    
+                    span {
+                        font-size: 16px;
+                    }
+                }
+
+                a {
+                    width: 48px;
+                    height: 48px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: $color-gray-700;
+                    border-radius: 50%;
+                }
+            }
+
+            &-body {
+                display: flex;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                &__text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    gap: 16px;
+
+                    h3 {
+                        font-weight: 600;
+                        font-size: 30px;
+                        line-height: 107%;
+                    }
+
+                    p {
+                        display: flex;
+                        align-items: center;
+                        gap: 4px;
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 122%;
+                    }
+
+                    a {
+                        color: #0391DD;
+                    }
+                }
+
+                ul {
+                    display: flex;
+                    align-items: center;
+                    gap: 0;
+
+                    li {
+                        width: 64px;
+                        height: 64px;
+                        border-radius: 50%;
+                        border: 1px solid $color-basic-500;
+                        box-shadow: 0 0 8px 0 rgba(17, 35, 192, 0.05), 0 0 2px 0 #e7e7e7;
+                        display: flex;
+                        overflow: hidden;
+                        background: #fff;
+
+                        &:not(:first-child) {
+                            margin-left: -40px;
+                        }
+                    }
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            &-foot {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                &__text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .left-text {
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        font-size: 16px;
+                        line-height: 150%;
+                        color: $color-alpha-800;
+                    }
+
+                    .right-text {
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 129%;
+                        text-align: right;
+                        color: $color-alpha-500;
+                        
+                        span {
+                            color: $color-alpha-800;
+                        }
+                    }
+                }
+
+                .line {
+                    width: 100%;
+                    height: 24px;
+                    display: flex;
+                    background: $color-basic-500;
+                    border-radius: 50px;
+                }
+            }
+        }
+    }
+}

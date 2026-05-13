@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="other-header">
+            <div class="other-header__top">
+                <div class="container">
+                    <a href="#">
+                        <img src="./assets/images/location-white.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </a>
+                    <a href="tel:+8 (800) 500-11-96">
+                        <img src="./assets/images/phone-white.svg" alt="">
+                        <span>8 (800) 500-11-96</span>
+                    </a>
+                </div>
+            </div>
+            <div class="other-header__content">
+                <div class="container">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <a href="#" class="login-btn">
+                        <img src="./assets/images/login-icon.svg" alt="">
+                        <span>Вход </span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Navs -->
+        <ul class="navs product-navs">
+            <li>
+                <a href="/" class="active">
+                    <img src="./assets/images/nav-icon-1.svg" alt="">
+                    <img src="./assets/images/nav-icon-1-active.svg" alt="">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-2.svg" alt="">
+                    <img src="./assets/images/nav-icon-2-active.svg" alt="">
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-3.svg" alt="">
+                    <img src="./assets/images/nav-icon-3-active.svg" alt="">
+                    <span>Каталог</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-4.svg" alt="">
+                    <img src="./assets/images/nav-icon-4-active.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-5.svg" alt="">
+                    <img src="./assets/images/nav-icon-5-active.svg" alt="">
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Navs end -->
+    
+        <main>
+
+            <!-- Basket -->
+            <section class="basket">
+                <div class="container basket-container">
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb">
+                        <div class="breadcrumb-content">
+                            <a href="/">Главная</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <span>Корзина</span>
+                        </div>
+                        <a href="/" class="back-btn">
+                            <img src="./assets/images/back-btn.svg" alt="">
+                            <span>На главную</span>
+                        </a>
+                    </div>
+                    <!-- Breadcrumb end -->
+                    <h2>Корзина</h2>
+                    <div class="basket-content">
+                        <div class="basket-content__left">
+                            <div class="basket-card">
+                                <div class="basket-card__left">
+                                    <img src="./assets/images/basket-card-1.png" alt="" class="main-img">
+                                </div>
+                                <div class="basket-card__content">
+                                    <div>
+                                        <div class="basket-card__head">
+                                            <p>Арт. 29805</p>
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.2496 4.5H16.5V3.75C16.4993 3.15347 16.2621 2.58156 15.8403 2.15975C15.4184 1.73794 14.8465 1.50067 14.25 1.5H9.75001C9.15348 1.50067 8.58157 1.73794 8.15976 2.15975C7.73795 2.58156 7.50068 3.15347 7.50001 3.75V4.5H3.74963C3.55072 4.5 3.35996 4.57902 3.2193 4.71967C3.07865 4.86032 2.99963 5.05109 2.99963 5.25C2.99963 5.44891 3.07865 5.63968 3.2193 5.78033C3.35996 5.92098 3.55072 6 3.74963 6H4.49963V19.5C4.50008 19.8977 4.65826 20.279 4.93947 20.5602C5.22067 20.8414 5.60195 20.9996 5.99963 21H17.9996C18.3973 20.9996 18.7786 20.8414 19.0598 20.5602C19.341 20.279 19.4992 19.8977 19.4996 19.5V6H20.2496C20.4485 6 20.6393 5.92098 20.78 5.78033C20.9206 5.63968 20.9996 5.44891 20.9996 5.25C20.9996 5.05109 20.9206 4.86032 20.78 4.71967C20.6393 4.57902 20.4485 4.5 20.2496 4.5ZM9.00001 3.75C9.00026 3.55116 9.07935 3.36054 9.21995 3.21994C9.36055 3.07935 9.55117 3.00025 9.75001 3H14.25C14.4488 3.00025 14.6395 3.07935 14.7801 3.21994C14.9207 3.36054 14.9998 3.55116 15 3.75V4.5H9.00001V3.75ZM17.9996 19.5H5.99963V6H17.9996V19.5ZM10.5 9.75V15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94892 16.5 9.75001 16.5C9.5511 16.5 9.36033 16.421 9.21968 16.2803C9.07903 16.1397 9.00001 15.9489 9.00001 15.75V9.75C9.00001 9.55109 9.07903 9.36032 9.21968 9.21967C9.36033 9.07902 9.5511 9 9.75001 9C9.94892 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V9.75ZM15 9.75V15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V9.75Z" fill="#8B91B4" />
+                                                </svg>
+                                                <span>Удалить</span>
+                                            </a>
+                                        </div>
+                                        <h3>Peavey Pv-1 U1 Bl 923.700MHz</h3>
+                                    </div>
+                                    <div class="basket-card__foot">
+                                        <h4>
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>В наличии</span>
+                                        </h4>
+                                        <div class="basket-card__price">
+                                            <div>
+                                                <p>Кол-во</p>
+                                                <div class="calculation-wrap">
+                                                    <div class="calculation">
+                                                        <button class="calculation-btn">-</button>
+                                                        <input type="text" class="calculation-inp" value="1" readonly>
+                                                        <button class="calculation-btn">+</button>
+                                                    </div>
+                                                    <div class="price-text">17 170 ₽ / шт.</div>
+                                                </div>
+                                            </div>
+                                            <div class="price-value">
+                                                <del>38 558 ₽</del>
+                                                <span>10 299 ₽</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card">
+                                <div class="basket-card__left">
+                                    <div class="card-alert">
+                                        <img src="./assets/images/car-icon.svg" alt="">
+                                    </div>
+                                    <img src="./assets/images/basket-card-2.png" alt="" class="main-img">
+                                </div>
+                                <div class="basket-card__content">
+                                    <div>
+                                        <div class="basket-card__head">
+                                            <p>Арт. 29805</p>
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.2496 4.5H16.5V3.75C16.4993 3.15347 16.2621 2.58156 15.8403 2.15975C15.4184 1.73794 14.8465 1.50067 14.25 1.5H9.75001C9.15348 1.50067 8.58157 1.73794 8.15976 2.15975C7.73795 2.58156 7.50068 3.15347 7.50001 3.75V4.5H3.74963C3.55072 4.5 3.35996 4.57902 3.2193 4.71967C3.07865 4.86032 2.99963 5.05109 2.99963 5.25C2.99963 5.44891 3.07865 5.63968 3.2193 5.78033C3.35996 5.92098 3.55072 6 3.74963 6H4.49963V19.5C4.50008 19.8977 4.65826 20.279 4.93947 20.5602C5.22067 20.8414 5.60195 20.9996 5.99963 21H17.9996C18.3973 20.9996 18.7786 20.8414 19.0598 20.5602C19.341 20.279 19.4992 19.8977 19.4996 19.5V6H20.2496C20.4485 6 20.6393 5.92098 20.78 5.78033C20.9206 5.63968 20.9996 5.44891 20.9996 5.25C20.9996 5.05109 20.9206 4.86032 20.78 4.71967C20.6393 4.57902 20.4485 4.5 20.2496 4.5ZM9.00001 3.75C9.00026 3.55116 9.07935 3.36054 9.21995 3.21994C9.36055 3.07935 9.55117 3.00025 9.75001 3H14.25C14.4488 3.00025 14.6395 3.07935 14.7801 3.21994C14.9207 3.36054 14.9998 3.55116 15 3.75V4.5H9.00001V3.75ZM17.9996 19.5H5.99963V6H17.9996V19.5ZM10.5 9.75V15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94892 16.5 9.75001 16.5C9.5511 16.5 9.36033 16.421 9.21968 16.2803C9.07903 16.1397 9.00001 15.9489 9.00001 15.75V9.75C9.00001 9.55109 9.07903 9.36032 9.21968 9.21967C9.36033 9.07902 9.5511 9 9.75001 9C9.94892 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V9.75ZM15 9.75V15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V9.75Z" fill="#8B91B4" />
+                                                </svg>
+                                                <span>Удалить</span>
+                                            </a>
+                                        </div>
+                                        <h3>Strandberg Boden Standard 8 10th Anniversary Silver</h3>
+                                    </div>
+                                    <div class="basket-card__foot">
+                                        <h4>
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>В наличии</span>
+                                        </h4>
+                                        <div class="basket-card__price">
+                                            <div>
+                                                <p>Кол-во</p>
+                                                <div class="calculation">
+                                                    <button class="calculation-btn">-</button>
+                                                    <input type="text" class="calculation-inp" value="1" readonly>
+                                                    <button class="calculation-btn">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="price-value">130 299 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card">
+                                <div class="basket-card__left">
+                                    <img src="./assets/images/basket-card-1.png" alt="" class="main-img">
+                                </div>
+                                <div class="basket-card__content">
+                                    <div>
+                                        <div class="basket-card__head">
+                                            <p>Арт. 29805</p>
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.2496 4.5H16.5V3.75C16.4993 3.15347 16.2621 2.58156 15.8403 2.15975C15.4184 1.73794 14.8465 1.50067 14.25 1.5H9.75001C9.15348 1.50067 8.58157 1.73794 8.15976 2.15975C7.73795 2.58156 7.50068 3.15347 7.50001 3.75V4.5H3.74963C3.55072 4.5 3.35996 4.57902 3.2193 4.71967C3.07865 4.86032 2.99963 5.05109 2.99963 5.25C2.99963 5.44891 3.07865 5.63968 3.2193 5.78033C3.35996 5.92098 3.55072 6 3.74963 6H4.49963V19.5C4.50008 19.8977 4.65826 20.279 4.93947 20.5602C5.22067 20.8414 5.60195 20.9996 5.99963 21H17.9996C18.3973 20.9996 18.7786 20.8414 19.0598 20.5602C19.341 20.279 19.4992 19.8977 19.4996 19.5V6H20.2496C20.4485 6 20.6393 5.92098 20.78 5.78033C20.9206 5.63968 20.9996 5.44891 20.9996 5.25C20.9996 5.05109 20.9206 4.86032 20.78 4.71967C20.6393 4.57902 20.4485 4.5 20.2496 4.5ZM9.00001 3.75C9.00026 3.55116 9.07935 3.36054 9.21995 3.21994C9.36055 3.07935 9.55117 3.00025 9.75001 3H14.25C14.4488 3.00025 14.6395 3.07935 14.7801 3.21994C14.9207 3.36054 14.9998 3.55116 15 3.75V4.5H9.00001V3.75ZM17.9996 19.5H5.99963V6H17.9996V19.5ZM10.5 9.75V15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94892 16.5 9.75001 16.5C9.5511 16.5 9.36033 16.421 9.21968 16.2803C9.07903 16.1397 9.00001 15.9489 9.00001 15.75V9.75C9.00001 9.55109 9.07903 9.36032 9.21968 9.21967C9.36033 9.07902 9.5511 9 9.75001 9C9.94892 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V9.75ZM15 9.75V15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V9.75Z" fill="#8B91B4" />
+                                                </svg>
+                                                <span>Удалить</span>
+                                            </a>
+                                        </div>
+                                        <h3>Peavey Pv-1 U1 Bl 923.700MHz</h3>
+                                    </div>
+                                    <div class="basket-card__foot">
+                                        <h4>
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>В наличии</span>
+                                        </h4>
+                                        <div class="basket-card__price">
+                                            <div>
+                                                <p>Кол-во</p>
+                                                <div class="calculation">
+                                                    <button class="calculation-btn">-</button>
+                                                    <input type="text" class="calculation-inp" value="1" readonly>
+                                                    <button class="calculation-btn">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="price-value">10 299 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-card">
+                                <div class="basket-card__left">
+                                    <div class="card-alert">
+                                        <img src="./assets/images/car-icon.svg" alt="">
+                                    </div>
+                                    <img src="./assets/images/basket-card-2.png" alt="" class="main-img">
+                                </div>
+                                <div class="basket-card__content">
+                                    <div>
+                                        <div class="basket-card__head">
+                                            <p>Арт. 29805</p>
+                                            <a href="#">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M20.2496 4.5H16.5V3.75C16.4993 3.15347 16.2621 2.58156 15.8403 2.15975C15.4184 1.73794 14.8465 1.50067 14.25 1.5H9.75001C9.15348 1.50067 8.58157 1.73794 8.15976 2.15975C7.73795 2.58156 7.50068 3.15347 7.50001 3.75V4.5H3.74963C3.55072 4.5 3.35996 4.57902 3.2193 4.71967C3.07865 4.86032 2.99963 5.05109 2.99963 5.25C2.99963 5.44891 3.07865 5.63968 3.2193 5.78033C3.35996 5.92098 3.55072 6 3.74963 6H4.49963V19.5C4.50008 19.8977 4.65826 20.279 4.93947 20.5602C5.22067 20.8414 5.60195 20.9996 5.99963 21H17.9996C18.3973 20.9996 18.7786 20.8414 19.0598 20.5602C19.341 20.279 19.4992 19.8977 19.4996 19.5V6H20.2496C20.4485 6 20.6393 5.92098 20.78 5.78033C20.9206 5.63968 20.9996 5.44891 20.9996 5.25C20.9996 5.05109 20.9206 4.86032 20.78 4.71967C20.6393 4.57902 20.4485 4.5 20.2496 4.5ZM9.00001 3.75C9.00026 3.55116 9.07935 3.36054 9.21995 3.21994C9.36055 3.07935 9.55117 3.00025 9.75001 3H14.25C14.4488 3.00025 14.6395 3.07935 14.7801 3.21994C14.9207 3.36054 14.9998 3.55116 15 3.75V4.5H9.00001V3.75ZM17.9996 19.5H5.99963V6H17.9996V19.5ZM10.5 9.75V15.75C10.5 15.9489 10.421 16.1397 10.2803 16.2803C10.1397 16.421 9.94892 16.5 9.75001 16.5C9.5511 16.5 9.36033 16.421 9.21968 16.2803C9.07903 16.1397 9.00001 15.9489 9.00001 15.75V9.75C9.00001 9.55109 9.07903 9.36032 9.21968 9.21967C9.36033 9.07902 9.5511 9 9.75001 9C9.94892 9 10.1397 9.07902 10.2803 9.21967C10.421 9.36032 10.5 9.55109 10.5 9.75V9.75ZM15 9.75V15.75C15 15.9489 14.921 16.1397 14.7803 16.2803C14.6397 16.421 14.4489 16.5 14.25 16.5C14.0511 16.5 13.8603 16.421 13.7197 16.2803C13.579 16.1397 13.5 15.9489 13.5 15.75V9.75C13.5 9.55109 13.579 9.36032 13.7197 9.21967C13.8603 9.07902 14.0511 9 14.25 9C14.4489 9 14.6397 9.07902 14.7803 9.21967C14.921 9.36032 15 9.55109 15 9.75V9.75Z" fill="#8B91B4" />
+                                                </svg>
+                                                <span>Удалить</span>
+                                            </a>
+                                        </div>
+                                        <h3>Strandberg Boden Standard 8 10th Anniversary Silver</h3>
+                                    </div>
+                                    <div class="basket-card__foot">
+                                        <h4>
+                                            <img src="./assets/images/success-icon.svg" alt="">
+                                            <span>В наличии</span>
+                                        </h4>
+                                        <div class="basket-card__price">
+                                            <div>
+                                                <p>Кол-во</p>
+                                                <div class="calculation">
+                                                    <button class="calculation-btn">-</button>
+                                                    <input type="text" class="calculation-inp" value="1" readonly>
+                                                    <button class="calculation-btn">+</button>
+                                                </div>
+                                            </div>
+                                            <div class="price-value">130 299 ₽</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="basket-content__right">
+                            <div class="basket-form">
+                                <h3>Ваша корзина</h3>
+                                <ul>
+                                    <li>
+                                        <span>Вес</span>
+                                        <b>3.65 кг</b>
+                                    </li>
+                                    <li>
+                                        <span>Товары (4)</span>
+                                        <b>328 986 ₽</b>
+                                    </li>
+                                    <li>
+                                        <span>Скидка</span>
+                                        <b class="text-green">-8 990 ₽</b>
+                                    </li>
+                                </ul>
+                                <div class="basket-form__price">
+                                    <span>320 986 ₽</span>
+                                    <b>320 986 ₽</b>
+                                </div>
+                                <div class="basket-form__promo">
+                                    <label for="">Введите промокод</label>
+                                    <div class="basket-form__promo-inp">
+                                        <input type="number">
+                                        <button>Применить</button>
+                                    </div>
+                                </div>
+                                <div class="basket-form__discount">
+                                    <p>Ваша персональная скидка </p>
+                                    <b>15%</b>
+                                </div>
+                                <button class="btn-green">Перйти к оформлению</button>
+                                <div class="form-checkbox">
+                                    <div class="form-checkbox__icon">
+                                        <input type="checkbox" checked name="" id="">
+                                        <img src="./assets/images/check-icon.svg" alt="">
+                                    </div>
+                                    <div class="form-checkbox__text">
+                                        Я даю согласие на обработку персональных данных в соответсвии с <a href="#">Политикий конфиденциальности</a>
+                                    </div>
+                                </div>
+                                <div class="form-checkbox">
+                                    <div class="form-checkbox__icon">
+                                        <input type="checkbox" checked name="" id="">
+                                        <img src="./assets/images/check-icon.svg" alt="">
+                                    </div>
+                                    <div class="form-checkbox__text">
+                                        Я согласен(а) получать информационные email рассылки на почту
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="basket-discount">
+                                <h3>Персональная скидка</h3>
+                                <div class="basket-discount__content">
+                                    <p>Применить персональную скидку N%</p>
+                                    <div class="form-switch">
+                                        <input type="checkbox" name="" id="">
+                                        <span></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Basket end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="other-footer">
+            <div class="container other-footer__container">
+                <a href="/" class="footer-logo">
+                    <img src="./assets/images/logo-light.png" width="156" alt="">
+                </a>
+                <div class="other-footer__text">
+                    <img src="./assets/images/other-footer-text-icon.svg" alt="">
+                    <ul>
+                        <li>Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</li>
+                        <li>© 2008-2021 Группа компаний DJSTORE</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>

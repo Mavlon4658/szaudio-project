@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Syle CSS -->
+    <link rel="stylesheet" href="./assets/scss/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="container header-container">
+                <div class="header-top">
+                    <a href="#" class="header-top__link">
+                        <img src="./assets/images/location.svg" alt="">
+                        <span>Санкт-Петербург</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="#">Компания</a>
+                        </li>
+                        <li>
+                            <a href="#">Услуги</a>
+                        </li>
+                        <li>
+                            <a href="#">Шоурумы</a>
+                        </li>
+                        <li>
+                            <a href="#">Справка</a>
+                        </li>
+                        <li>
+                            <a href="#">Партнерам</a>
+                        </li>
+                        <li>
+                            <a href="#">Контакты</a>
+                        </li>
+                    </ul>
+                    <a href="tel:+8 (800) 500-11-96" class="header-top__link">
+                        <img src="./assets/images/phone.svg" alt="">
+                        <span>8 (800) 500-11-96</span>
+                    </a>
+                </div>
+                <div class="header-sm">
+                    <button class="header-bars">
+                        <img src="./assets/images/bars.svg" alt="">
+                    </button>
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <a href="tel:+8 (800) 500-11-96" class="phone-link">
+                        <img src="./assets/images/call-icon.svg" alt="">
+                    </a>
+                </div>
+                <div class="header-body">
+                    <a href="/" class="header-logo">
+                        <img src="./assets/images/logo.png" width="156" alt="">
+                    </a>
+                    <div class="header-content">
+                        <button class="btn-black">
+                            <img src="./assets/images/catalog-icon.svg" alt="">
+                            <span>Каталог</span>
+                        </button>
+                        <div class="header-search">
+                            <input type="text" placeholder="Название, артикул...">
+                            <button>
+                                <img src="./assets/images/loop.svg" alt="">
+                            </button>
+                        </div>
+                        <button class="header-search__btn">Найти</button>
+                    </div>
+                    <div class="header-body__right">
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/status-icon.svg" alt="">
+                            <span>Статус</span>
+                        </a>
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/favorite-icon.svg" alt="">
+                            <span>Избранное</span>
+                        </a>
+                        <div class="header-basket">
+                            <button class="header-body__right-link">
+                                <img src="./assets/images/basket.svg" alt="">
+                                <span>Корзина</span>
+                            </button>
+                            <div class="header-basket__content">
+                                <img src="./assets/images/corner.svg" alt="" class="icon">
+                                <h3>Корзина все еще пуста </h3>
+                                <p>Чтобы выбрать подходящий товар, воспользуйтесь каталогом</p>
+                                <a href="#" class="btn-black">Открыть каталог</a>
+                            </div>
+                        </div>
+                        <a href="#" class="header-body__right-link">
+                            <img src="./assets/images/login-icon.svg" alt="">
+                            <span>Вход </span>
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bottom">
+                    <ul>
+                        <li>
+                            <a href="#">DJ-оборудование</a>
+                        </li>
+                        <li>
+                            <a href="#">Микрофоны</a>
+                        </li>
+                        <li>
+                            <a href="#">Клавиши</a>
+                        </li>
+                        <li>
+                            <a href="#">Звук</a>
+                        </li>
+                        <li>
+                            <a href="#">Свет</a>
+                        </li>
+                        <li>
+                            <a href="#">Коммутация</a>
+                        </li>
+                        <li>
+                            <a href="#">Кейсы</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <!-- Header end -->
+
+        <!-- Navs -->
+        <ul class="navs">
+            <li>
+                <a href="/" class="active">
+                    <img src="./assets/images/nav-icon-1.svg" alt="">
+                    <img src="./assets/images/nav-icon-1-active.svg" alt="">
+                    <span>Главная</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-2.svg" alt="">
+                    <img src="./assets/images/nav-icon-2-active.svg" alt="">
+                    <span>Избранное</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-3.svg" alt="">
+                    <img src="./assets/images/nav-icon-3-active.svg" alt="">
+                    <span>Каталог</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-4.svg" alt="">
+                    <img src="./assets/images/nav-icon-4-active.svg" alt="">
+                    <span>Корзина</span>
+                </a>
+            </li>
+            <li>
+                <a href="/">
+                    <img src="./assets/images/nav-icon-5.svg" alt="">
+                    <img src="./assets/images/nav-icon-5-active.svg" alt="">
+                    <span>Профиль</span>
+                </a>
+            </li>
+        </ul>
+        <!-- Navs end -->
+    
+        <main>
+
+            <!-- Status modal -->
+            <section class="modal status-modal">
+                <div class="modal-bg"></div>
+                <div class="modal-dialog">
+                    <div class="container">
+                        <div class="modal-content">
+                            <div class="modal-content__head">
+                                <h2>Статус доставки</h2>
+                                <button class="modal-close">
+                                    <img src="./assets/images/times-gray.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="line"></div>
+                            <ul>
+                                <li>
+                                    <h3>1</h3>
+                                    <p>Ожидает обработки</p>
+                                </li>
+                                <li>
+                                    <h3>2</h3>
+                                    <p>Обрабатывается</p>
+                                </li>
+                                <li>
+                                    <h3>3</h3>
+                                    <p>Принят</p>
+                                </li>
+                            </ul>
+                            <button class="btn-black">
+                                <span>Понятно</span>
+                                <img src="./assets/images/thumbs-up.svg" alt="">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Status modal end -->
+
+            <!-- Order -->
+            <section class="order order-payment">
+                <div class="container order-container">
+                    <!-- Breadcrumb -->
+                    <div class="breadcrumb">
+                        <div class="breadcrumb-content">
+                            <a href="/">Главная</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <a href="/">Личный кабинет</a>
+                            <img src="./assets/images/breadcrumb-icon.svg" alt="">
+                            <span>Заказ № 149909</span>
+                        </div>
+                        <a href="#" class="back-btn">
+                            <img src="./assets/images/back-btn.svg" alt="">
+                            <span>Личный кабинет</span>
+                        </a>
+                    </div>
+                    <!-- Breadcrumb end -->
+                    <div class="order-head">
+                        <h2>Заказ № 149909</h2>
+                        <div class="alert-success">Оплачен</div>
+                    </div>
+                    <div class="order-content">
+                        <div class="order-left">
+                            <h3>Ваш заказ № <span>149909</span> размещен и ожидает оплаты</h3>
+                            <p class="text-gray">Мы отправили письмо с информацией на E-mail с вашим подтвержденным заказом. Если письмо не пришло, пожалуйста проверьте папку спам.</p>
+                            <div class="text-1">
+                                <p>
+                                    <img src="./assets/images/clock-black.svg" alt="">
+                                    <span>Время отправки: 16.02.2020, 15:30</span>
+                                </p>
+                                <p>
+                                    <img src="./assets/images/print-icon.svg" alt="">
+                                    <span>Распечатать заказ</span>
+                                </p>
+                            </div>
+                            <button class="btn-outline status-modal__open">
+                                <img src="./assets/images/tab-head-icon-2.svg" alt="">
+                                <span>Находится на отправке</span>
+                            </button>
+                            <div class="line"></div>
+                            <h3>Данные заказчика</h3>
+                            <ul>
+                                <li>
+                                    <span>Имя Фамилия</span>
+                                    <b>Иван Иванов</b>
+                                </li>
+                                <li>
+                                    <span>Телефон</span>
+                                    <b>+791119880090</b>
+                                </li>
+                                <li>
+                                    <span>E-Mail</span>
+                                    <b>IvanIvanov@company.ru</b>
+                                </li>
+                            </ul>
+                            <div class="line"></div>
+                            <h3>Способ доставки</h3>
+                            <div class="text-2">
+                                <img src="./assets/images/yandex-go.svg" alt="">
+                                <p>Курьерская доставка</p>
+                            </div>
+                            <p>г. Санкт-Петербург, Ул. Садовая, д. 148, строение 3, кв. 43, подъезд 1, этаж 6</p>
+                            <div class="text-3">
+                                <span>Срок доставки</span>
+                                <b>2-3 часа</b>
+                            </div>
+                            <div class="line"></div>
+                            <h3>Способ оплаты</h3>
+                            <div class="text-4">
+                                <p>
+                                    <img src="./assets/images/tinkoff-logo.svg" alt="">
+                                    <span>Тинькофф</span>
+                                </p>
+                                <b>Банковской картой</b>
+                            </div>
+                            <div class="line"></div>
+                            <h3>Комментарий к заказу</h3>
+                            <p>Проезд на территорию двора через шлагбаум, просьба курьера заблаговременно позвонить.</p>
+                        </div>
+                        <div class="order-right">
+                            <div class="order-right__title">Ваши товары</div>
+                            <div class="order-list">
+                                <div class="order-card">
+                                    <div class="order-card__img">
+                                        <img src="./assets/images/order-card-1.png" alt="">
+                                    </div>
+                                    <div class="order-card__content">
+                                        <div class="order-card__id">27002</div>
+                                        <div class="order-card__name">Радиосистема с петличным микрофоном Shure BLX14E/CVL M17</div>
+                                        <div class="content-bottom">
+                                            <div class="order-card__amount">Кол-во <span>2 шт.</span></div>
+                                            <div class="order-card__price">34 340 ₽</div>
+                                        </div>
+                                        <a href="#" class="order-card__remove">Удалить</a>
+                                    </div>
+                                </div>
+                                <div class="order-card">
+                                    <div class="order-card__img">
+                                        <img src="./assets/images/order-card-2.png" alt="">
+                                    </div>
+                                    <div class="order-card__content">
+                                        <div class="order-card__id">27002</div>
+                                        <div class="order-card__name">Радиосистема с петличным микрофоном Shure BLX14E/CVL M17</div>
+                                        <div class="content-bottom">
+                                            <div class="order-card__amount">Кол-во <span>2 шт.</span></div>
+                                            <div class="order-card__price">34 340 ₽</div>
+                                        </div>
+                                        <a href="#" class="order-card__remove">Удалить</a>
+                                    </div>
+                                </div>
+                                <div class="order-card">
+                                    <div class="order-card__img">
+                                        <img src="./assets/images/order-card-3.png" alt="">
+                                    </div>
+                                    <div class="order-card__content">
+                                        <div class="order-card__id">27002</div>
+                                        <div class="order-card__name">Радиосистема с петличным микрофоном Shure BLX14E/CVL M17</div>
+                                        <div class="content-bottom">
+                                            <div class="order-card__amount">Кол-во <span>2 шт.</span></div>
+                                            <div class="order-card__price">34 340 ₽</div>
+                                        </div>
+                                        <a href="#" class="order-card__remove">Удалить</a>
+                                    </div>
+                                </div>
+                                <div class="order-card">
+                                    <div class="order-card__img">
+                                        <img src="./assets/images/order-card-4.png" alt="">
+                                    </div>
+                                    <div class="order-card__content">
+                                        <div class="order-card__id">27002</div>
+                                        <div class="order-card__name">Радиосистема с петличным микрофоном Shure BLX14E/CVL M17</div>
+                                        <div class="content-bottom">
+                                            <div class="order-card__amount">Кол-во <span>2 шт.</span></div>
+                                            <div class="order-card__price">34 340 ₽</div>
+                                        </div>
+                                        <a href="#" class="order-card__remove">Удалить</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="order-prices">
+                                <ul>
+                                    <li>
+                                        <span>Вес</span>
+                                        <b>3.65 кг</b>
+                                    </li>
+                                    <li>
+                                        <span>Товары (2)</span>
+                                        <b>338 456 ₽</b>
+                                    </li>
+                                    <li>
+                                        <span>Скидка</span>
+                                        <b class="text-green">-8 990 ₽</b>
+                                    </li>
+                                    <li>
+                                        <span>Стоимость доставки</span>
+                                        <b>+600 ₽</b>
+                                    </li>
+                                </ul>
+                                <div class="total-price">
+                                    <p>Итого</p>
+                                    <b>321 586 ₽</b>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Order end -->
+
+        </main>
+
+        <!-- Footer -->
+        <footer class="other-footer">
+            <div class="container other-footer__container">
+                <a href="/" class="footer-logo">
+                    <img src="./assets/images/logo-light.png" width="156" alt="">
+                </a>
+                <div class="other-footer__text">
+                    <img src="./assets/images/other-footer-text-icon.svg" alt="">
+                    <ul>
+                        <li>Внимание! Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ.</li>
+                        <li>© 2008-2021 Группа компаний DJSTORE</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer end -->
+
+    </div>
+
+    <!-- iMask JS -->
+    <script src="./assets/js/iMask.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- JS file -->
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
